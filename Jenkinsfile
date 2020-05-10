@@ -12,5 +12,8 @@ stage('compile pkg'){
     
     
 }
+	stage('email notification'){
+		mail bcc: '', body: 'from Shivani', cc: '', from: '', replyTo: '', subject: 'jenkins pipeline', to: 'yshivani1998@gmail.com'
+	}
 
 }
